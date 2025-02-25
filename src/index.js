@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
   res.send('hai ')
 })
 
-app.listen(port, ()=>{
+app.listen(port, '0.0.0.0', () => {
   console.log(`Server connected at port ${port}`)
-})
+});
