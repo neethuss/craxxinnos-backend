@@ -23,6 +23,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/user/', UserRoutes)
 
 app.get('/', (req, res) => {
+  console.log('api conneting')
+
   res.send('hai ')
 })
 
