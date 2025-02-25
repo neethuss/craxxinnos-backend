@@ -22,6 +22,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/user/', UserRoutes)
 
+app.get('/', (req, res) => {
+  res.send('hai ')
+})
+
 app.listen(port, ()=>{
   console.log(`Server connected at port ${port}`)
 })
